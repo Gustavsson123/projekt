@@ -6,10 +6,11 @@ import L from 'leaflet';
 function App() {
   const positions = [
     { long: 59.840236, lat: 17.650246 },
-    { long: 49.840236, lat: 18.650246 },
+    { long: 17.840236, lat: 12.450246 },
     { long: 51.840236, lat: 19.650246 },
     { long: 69.840236, lat: 16.650246 },
-    { long: 53.840236, lat: 20.650246 }
+    { long: 53.840236, lat: 120.650246 },
+    { long: 39.027871, lat: 125.707641 }
   ]
 
   const customIcon = new L.Icon({//creating a custom icon to use in Marker
@@ -22,7 +23,7 @@ function App() {
       return (
         <Marker key={index} position={[pos.long, pos.lat]} icon={customIcon}>
           <Popup>
-            Linus Janssons Iphone
+            Burma Benny
           </Popup>
         </Marker>
       )
