@@ -26,6 +26,10 @@ function Container() {
     };
     useEffect(() => {
         getAllPokemons();
+
+        return () => {
+            setAllPokemons([]);
+        }
     }, []);
 
 
